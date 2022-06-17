@@ -7,15 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CE06856C2854B5E000BE6441 /* CustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE06856B2854B5E000BE6441 /* CustomView.swift */; };
 		CEDC48D928017980007822F5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDC48D828017980007822F5 /* AppDelegate.swift */; };
 		CEDC48DB28017980007822F5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDC48DA28017980007822F5 /* SceneDelegate.swift */; };
 		CEDC48DD28017980007822F5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDC48DC28017980007822F5 /* ViewController.swift */; };
 		CEDC48E028017980007822F5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEDC48DE28017980007822F5 /* Main.storyboard */; };
 		CEDC48E228017981007822F5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEDC48E128017981007822F5 /* Assets.xcassets */; };
 		CEDC48E528017981007822F5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEDC48E328017981007822F5 /* LaunchScreen.storyboard */; };
+		CEDC4918280A259B007822F5 /* FoxService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDC4917280A259B007822F5 /* FoxService.swift */; };
+		CEDC491A280A25E1007822F5 /* Fox.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDC4919280A25E1007822F5 /* Fox.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CE06856B2854B5E000BE6441 /* CustomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomView.swift; sourceTree = "<group>"; };
 		CEDC48D528017980007822F5 /* FoxApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FoxApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEDC48D828017980007822F5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CEDC48DA28017980007822F5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +28,8 @@
 		CEDC48E128017981007822F5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CEDC48E428017981007822F5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CEDC48E628017981007822F5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CEDC4917280A259B007822F5 /* FoxService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoxService.swift; sourceTree = "<group>"; };
+		CEDC4919280A25E1007822F5 /* Fox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fox.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,10 +65,13 @@
 				CEDC48D828017980007822F5 /* AppDelegate.swift */,
 				CEDC48DA28017980007822F5 /* SceneDelegate.swift */,
 				CEDC48DC28017980007822F5 /* ViewController.swift */,
+				CEDC4917280A259B007822F5 /* FoxService.swift */,
 				CEDC48DE28017980007822F5 /* Main.storyboard */,
 				CEDC48E128017981007822F5 /* Assets.xcassets */,
 				CEDC48E328017981007822F5 /* LaunchScreen.storyboard */,
 				CEDC48E628017981007822F5 /* Info.plist */,
+				CEDC4919280A25E1007822F5 /* Fox.swift */,
+				CE06856B2854B5E000BE6441 /* CustomView.swift */,
 			);
 			path = FoxApp;
 			sourceTree = "<group>";
@@ -139,6 +148,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				CEDC48DD28017980007822F5 /* ViewController.swift in Sources */,
+				CEDC4918280A259B007822F5 /* FoxService.swift in Sources */,
+				CEDC491A280A25E1007822F5 /* Fox.swift in Sources */,
+				CE06856C2854B5E000BE6441 /* CustomView.swift in Sources */,
 				CEDC48D928017980007822F5 /* AppDelegate.swift in Sources */,
 				CEDC48DB28017980007822F5 /* SceneDelegate.swift in Sources */,
 			);
@@ -297,6 +309,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -325,6 +338,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
